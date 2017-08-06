@@ -1,0 +1,28 @@
+<div class="ui stackable two column grid">
+    <div class="column">
+        <div class="ui piled segment">
+            <h2 class="ui icon left aligned header">
+                <i class="settings icon"></i>
+                <div class="content">
+                    Ng Class With Function
+                    <div class="sub header">
+                        Ng Class With Function
+                    </div>
+                </div>
+            </h2>
+            <p [ngClass]="{coloful: confirmColoful()}">
+                This is ag class with function
+            </p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui piled segment">
+            <h3 class="ui center aligned icon header">
+                <i class="circular users icon"></i> String Interporator with Function
+            </h3>
+            <h2>
+                {{description()}}
+            </h2>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="ui grid three column">
+    <div class="column text-bold text-warning">
+        {{StringInterpolation}}
+    </div>
+    <div class="column">
+        <cite>disable btn</cite>
+        <button class="ui button teal medium" [disabled]="IsDisabled" aria-label="anyLabel">
+		  	anyLabel
+		</button>
+        <cite>innerText</cite>
+        <p class="text-primary text-bold" [innerText]="innerWord"></p>
+    </div>
+    <div class="column">
+        <input type="text" name="eventInputBinding" id="input1/(\w+)/\u\1/g" class="form-control" value="" required="required" (blur)="updateText($event)"
+        />
+        <div class="ui horizontal divider">
+            {{eventText}}
+        </div>
+    </div>
+</div>
+
+<div class="ui center aligned grid">
+    <div class="ui right labeled left icon input">
+        <i class="tags icon violet"></i>
+        <input type="text" placeholder="Please Input sth..." [(ngModel)]="NgModelText" />
+        <a class="ui tag label orange">
+			Add Tag
+  		</a>
+    </div>
+    <article class="four wide column text-success text-bold">
+        Result: {{NgModelText}}
+    </article>
+</div>

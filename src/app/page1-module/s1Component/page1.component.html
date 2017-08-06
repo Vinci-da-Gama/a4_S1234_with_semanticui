@@ -1,0 +1,30 @@
+<div class="ui segment">
+    <div class="ui stackable two column grid">
+        <div class="column">
+            <app-subject-title [(IconClasses)]="IconsTexts.Icon0" [(TitleText)]="IconsTexts.Text0"></app-subject-title>
+            <app-nested-component></app-nested-component>
+        </div>
+        <div class="column">
+            <app-subject-title [(IconClasses)]="IconsTexts.Icon1" [(TitleText)]="IconsTexts.Text1"></app-subject-title>
+            <app-databinging-component></app-databinging-component>
+        </div>
+    </div>
+    <div class="ui stackable two column grid">
+        <div class="column">
+            <app-subject-title [(IconClasses)]="IconsTexts.Icon2" [(TitleText)]="IconsTexts.Text2"></app-subject-title>
+            <!-- <div id="app-id-class-component"></div>  -->
+            <div class="id-class-component"></div>
+        </div>
+        <div class="column">
+            <app-subject-title [(IconClasses)]="IconsTexts.Icon3" [(TitleText)]="IconsTexts.Text3"></app-subject-title>
+            <app-ng-if-class-style-for-switch></app-ng-if-class-style-for-switch>
+        </div>
+    </div>
+
+    <div class="ui center aligned grid">
+        <div class="column">
+            <app-subject-title [(IconClasses)]="IconsTexts.Icon4" [(TitleText)]="IconsTexts.Text4"></app-subject-title>
+            <app-function-as-expression></app-function-as-expression>
+        </div>
+    </div>
+</div>

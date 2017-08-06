@@ -1,0 +1,17 @@
+<div class="ui grid stackable container">
+    <div class="column">
+        <button class="ui tag brown label" (click)="AddTime()">
+			Add_Time_Stamp
+		</button>
+        <div class="ui middle aligned animated list" *ngFor="let time of TimeStamps;">
+            <div class="item">
+                <i class="hand scissors icon fz2em"></i>
+                <div class="content">
+                    <div class="header">
+                        {{time}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

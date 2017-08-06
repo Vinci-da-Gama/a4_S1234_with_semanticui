@@ -1,0 +1,23 @@
+<div class="ui segment">
+    <div class="ui stackable two column grid">
+        <div class="column">
+            <div class="ui orange segment">
+                <app-page2-title [(Page2HeaderText)]="Titles.Title0"></app-page2-title>
+                <app-two-message></app-two-message>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui green segment">
+                <app-page2-title [(Page2HeaderText)]="Titles.Title1"></app-page2-title>
+                <app-reset-btn></app-reset-btn>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui blue segment">
+                <app-page2-title [(Page2HeaderText)]="Titles.Title2"></app-page2-title>
+                <p>Click btn to show time stamps.</p>
+                <app-record-log></app-record-log>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+<h5 class="ui top attached header">
+    <i class="mail icon"></i> Ng-If -- true will show, false will hide.
+</h5>
+<div class="ui attached segment" *ngIf="IsItTrue">
+    Only *ngIf if true will show -- IsItTrue
+</div>
+<h5 class="ui attached header">
+    <i class="hourglass empty icon text-success"></i>Ng-Style
+</h5>
+<div class="ui attached segment">
+    <p [ngStyle]="{color: ExpressionTrue? 'blue': 'red'}">
+        style for text-color, but NgStyle only allow one css property, so we need Ng-Class.
+    </p>
+</div>
+<h5 class="ui attached header">
+    <i class="add to calendar icon"></i> Ng-Class
+</h5>
+<div class="ui attached segment">
+    <p [ngClass]="{'colorfzbgc': ExpressionToF}">
+        Ng-Class can change multi css properties;
+    </p>
+</div>
+<div class="ui bottom attached success message">
+    <i class="mobile icon"></i> You've reached the end of this content segment!
+</div>
+<div class="ui yellow segment">
+    <i class="power icon"></i> Ng-For
+</div>
+<div class="ui horizontal list" *ngFor="let eachPerson of PeopleList; let i = index;">
+    <div class="item">
+        <i [class]="eachPerson.icon"></i>
+        <div class="content">
+            <div class="header">{{i+1}} -- {{eachPerson.name}}</div>
+            <cite>This person is {{eachPerson.age}} years old.</cite>
+        </div>
+    </div>
+</div>
+<div class="ui olive segment">
+    <i class="file word outline icon"></i> Ng-Switch
+</div>
+
+<div class="ui mini steps" *ngFor="let eachPerson of PeopleList; let i = index" [ngSwitch]="eachPerson.country">
+    <div class="step" *ngSwitchCase="'MARS'">
+        <i [class]="eachPerson.icon"></i>
+        <div class="content">
+            <div class="title">{{i+1}} -- {{eachPerson.name}}</div>
+            <cite class="description">This person comes from {{eachPerson.country}}</cite>
+        </div>
+    </div>
+    <div class="step" *ngSwitchCase="'USA'">
+        <i [class]="eachPerson.icon"></i>
+        <div class="content">
+            <div class="title">{{i+1}} -- {{eachPerson.name}}</div>
+            <cite class="description">This person comes from {{eachPerson.country}}</cite>
+        </div>
+    </div>
+    <div class="step" *ngSwitchCase="'INDIA'">
+        <i [class]="eachPerson.icon"></i>
+        <div class="content">
+            <div class="title">{{i+1}} -- {{eachPerson.name}}</div>
+            <cite class="description">This person comes from {{eachPerson.country}}</cite>
+        </div>
+    </div>
+    <div class="step" *ngSwitchCase="'UK'">
+        <i [class]="eachPerson.icon"></i>
+        <div class="content">
+            <div class="title">{{i+1}} -- {{eachPerson.name}}</div>
+            <cite class="description">This person comes from {{eachPerson.country}}</cite>
+        </div>
+    </div>
+    <div class="step" *ngSwitchDefault>
+        <i [class]="eachPerson.icon"></i>
+        <div class="content">
+            <div class="title">{{i+1}} -- {{eachPerson.name}}</div>
+            <cite class="description">This person comes from {{eachPerson.country}}</cite>
+        </div>
+    </div>
+</div>

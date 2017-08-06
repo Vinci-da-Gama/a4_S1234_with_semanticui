@@ -5,11 +5,23 @@
 </div>
 <sui-sidebar-container class="ui bottom attached segment">
     <sui-sidebar class="inverted vertical" #sidebar>
-        <a class="item" [routerLink]="['/page1']">Page_1</a>
-        <a class="item" [routerLink]="['/page2']">Page_2</a>
+        <a class="item" [routerLink]="['/page1']">
+            Section1
+        </a>
+        <a class="item" [routerLink]="['/page2']">
+            Section2
+        </a>
+        <a class="item" [routerLink]="['/page3']">
+            Section3
+        </a>
+        <a class="item" [routerLink]="['/page4']">
+            Section4
+        </a>
     </sui-sidebar>
     <sui-sidebar-sibling [isDimmedWhenVisible]="true">
         <router-outlet></router-outlet>
-        <button class="ui button" (click)="sidebar.open()">Open Sidebar</button>
+        <button class="ui button" (click)="sidebar.open()">
+            Open Sidebar
+        </button>
     </sui-sidebar-sibling>
 </sui-sidebar-container>
