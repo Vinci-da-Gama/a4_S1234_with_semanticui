@@ -1,0 +1,23 @@
+<h2 class="ui dividing header">Use Rxjs->BehaviorSubject To Get Data From <small>Parent Component</small></h2>
+<div class="ui stackable two column grid" *ngFor="let elem3rd of list3rd; let idx = index">
+    <div class="column">
+        <div class="ui middle aligned animated list">
+            <div class="item">
+                <i class="university icon fz2em"></i>
+                <div class="content">
+                    <div class="header">{{idx+1}} -- {{elem3rd.title}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui middle aligned animated list">
+            <div class="item">
+                <i class="thermometer three quarters icon fz2em"></i>
+                <div class="content">
+                    <div class="header">{{elem3rd.type}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
